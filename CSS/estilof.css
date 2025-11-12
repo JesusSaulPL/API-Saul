@@ -1,0 +1,229 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+
+
+
+h1 {
+  text-align: center;
+  color: #2b6cb0;
+}
+.Registro h2 {
+  text-align: center;
+  color: #2b6cb0;
+}
+ h2 {
+  text-align: center;
+  color: #2b6cb0;
+}
+.form-group, #registroToggle {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* mantiene los campos centrados en el formulario */
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #2b6cb0;
+  width: 100%;
+  max-width: 480px;
+  text-align: left;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  max-width: 480px;
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.02);
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2b6cb0;
+  box-shadow: 0 0 0 4px rgba(43, 108, 176, 0.12);
+}
+
+.form-group .help {
+  font-size: 0.9rem;
+  color: #6b7280;
+  width: 100%;
+  max-width: 480px;
+  text-align: left;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+
+}
+
+th, td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #2b6cb0;
+  color: white;
+}
+
+tr:hover {
+  background: #f1f5ff;
+}
+
+.btn-refresh , .Registro button, .Editar button {
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-refresh:hover {
+  background: #1e4f8f;
+}
+
+/* Paginación */
+#pagination {
+  text-align: center;
+  margin: 12px 0 28px;
+}
+
+#pagination button {
+  margin: 0 4px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+#pagination button:hover { background: #f1f5ff; }
+#pagination button[disabled] { opacity: 0.5; cursor: not-allowed; }
+#pagination .active-page { background: #2b6cb0; color: #fff; border-color: #1e4f8f; }
+#registroToggle , #editarToggle{
+ background: #2b6cb0;
+ color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+
+}
+
+
+/* Estilos para el formulario de edición */
+
+
+/* Fondo del modal */
+.modal {
+  display: none; /* oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  padding-top: 20px;
+  left: 0;
+  top: 2px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* Contenedor del modal */
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 40%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Botón de cierre */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+/* Estilo de formulario */
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.btn-guardar {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.btn-guardar:hover {
+  background-color: #0056b3;
+}
+.btn-cancelar {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  margin-top: 10px;
+}
